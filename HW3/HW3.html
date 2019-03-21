@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Input your grades</p>
+
+
+
+<script>
+function result(){
+	var a;
+		a=document.getElementById("b").value;
+			if (a>60) {
+  				document.getElementById("one").innerHTML = "U Passed!";
+			}
+			else {
+  				document.getElementById("one").innerHTML = "U failed!";
+		}}
+</script>
+<p>Please key your grades:</p>
+<input type="number" id="b">
+<button onclick="result()">result</button>
+<output id="one"></output>
+</body>
+</html>
