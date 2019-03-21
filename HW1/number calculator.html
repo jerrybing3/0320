@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+
+</head>
+<body>
+
+<input type="number" id="one" value=1>
+<input type="number" id="two" value=3>
+
+<script> 
+	var a,b;
+function addnumber(){
+   a = parseInt(document.getElementById("one").value);
+   b = parseInt(document.getElementById("two").value);
+   document.getElementById("asd").innerHTML= a+b;
+}
+function minusnumber(){
+ 		a = parseInt(document.getElementById("one").value);
+   		b = parseInt(document.getElementById("two").value);
+   	document.getElementById("asd").innerHTML= a-b;
+	}
+function multiplynumber(){
+ 		a = parseInt(document.getElementById("one").value);
+   		b = parseInt(document.getElementById("two").value);
+   	document.getElementById("asd").innerHTML= a*b;
+	}
+function eliminatenumber(){
+ 		a = parseInt(document.getElementById("one").value);
+   		b = parseInt(document.getElementById("two").value);
+   	document.getElementById("asd").innerHTML= a/b;
+	}
+</script>
+ 
+ <button type = "button" onclick="addnumber()">add</button>
+ <button type = "button" onclick="minusnumber()">minus</button>
+ <button type = "button" onclick="multiplynumber()">mutiply</button>
+ <button type = "button" onclick="eliminatenumber()">eliminate</button>
+ <h2>Result:</h2>
+ <p id="asd"></p>
+
+</body>
+</html>
